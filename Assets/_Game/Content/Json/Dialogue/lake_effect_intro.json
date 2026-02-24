@@ -1,0 +1,19 @@
+{
+  "dialogueId": "lake_effect_intro",
+  "nodes": [
+    {
+      "id": "start",
+      "speaker": "Barista",
+      "line": "Machine's dead this morning. Can you check the pump?",
+      "responses": [
+        { "text": "I'll run diagnostics.", "next": "accept" }
+      ]
+    },
+    {
+      "id": "accept",
+      "speaker": "Technician",
+      "line": "On it.",
+      "responses": []
+    }
+  ]
+}

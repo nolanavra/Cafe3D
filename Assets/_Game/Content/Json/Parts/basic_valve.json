@@ -1,0 +1,14 @@
+{
+  "partId": "BasicValve",
+  "displayName": "Basic Valve",
+  "category": "Valve",
+  "ports": [
+    { "portId": "in", "kind": "Fluid", "direction": "Input" },
+    { "portId": "out", "kind": "Fluid", "direction": "Output" }
+  ],
+  "stats": {
+    "maxPressureBar": 12.0,
+    "temperatureLimitC": 130.0,
+    "resistanceOhm": 0.0
+  }
+}
