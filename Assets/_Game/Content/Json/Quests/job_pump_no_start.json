@@ -1,0 +1,16 @@
+{
+  "questId": "job_pump_no_start",
+  "title": "Pump Won't Start",
+  "cafeId": "LakeEffectCafe",
+  "machineId": "BuffaloBaristaOne",
+  "faults": [
+    { "type": "OpenCircuit", "node": "pump.power" }
+  ],
+  "objectives": [
+    "TalkToBarista",
+    "RunDiagnostics",
+    "RestorePower",
+    "TestCalibrate"
+  ],
+  "reward": { "cash": 120, "reputation": 5 }
+}
