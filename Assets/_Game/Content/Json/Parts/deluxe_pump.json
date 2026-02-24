@@ -1,0 +1,15 @@
+{
+  "partId": "DeluxePump",
+  "displayName": "Deluxe Pump",
+  "category": "Pump",
+  "ports": [
+    { "portId": "power", "kind": "Electrical", "direction": "Input" },
+    { "portId": "in", "kind": "Fluid", "direction": "Input" },
+    { "portId": "out", "kind": "Fluid", "direction": "Output" }
+  ],
+  "stats": {
+    "maxPressureBar": 15.0,
+    "temperatureLimitC": 120.0,
+    "wattDraw": 1400
+  }
+}

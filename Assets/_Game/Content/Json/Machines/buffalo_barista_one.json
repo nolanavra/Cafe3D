@@ -1,0 +1,12 @@
+{
+  "machineId": "BuffaloBaristaOne",
+  "grid": { "width": 18, "height": 12 },
+  "parts": [
+    { "partId": "DeluxePump", "x": 3, "y": 5, "rotation": 0 },
+    { "partId": "BasicValve", "x": 8, "y": 5, "rotation": 1 }
+  ],
+  "requiredCircuits": {
+    "electrical": ["power -> pump"],
+    "fluid": ["tank -> pump -> valve -> grouphead"]
+  }
+}
