@@ -1,363 +1,82 @@
 {
-  "name": "GameInput",
-  "maps": [
-    {
-      "name": "Cafe",
-      "id": "98726704-baa8-5143-aba1-0d9f44b1378f",
-      "actions": [
+    "name": "GameInput",
+    "maps": [
         {
-          "name": "Move",
-          "type": "Value",
-          "id": "ced1a704-8289-5ad6-94d4-370ce88a56a9",
-          "expectedControlType": "Vector2"
+            "name": "Cafe",
+            "id": "b5b6c111-8c5b-44c2-a6bf-3405604060b1",
+            "actions": [
+                { "name": "Move", "type": "Value", "id": "1", "expectedControlType": "Vector2" },
+                { "name": "Look", "type": "Value", "id": "2", "expectedControlType": "Vector2" },
+                { "name": "Sprint", "type": "Button", "id": "3", "expectedControlType": "Button" },
+                { "name": "Interact", "type": "Button", "id": "4", "expectedControlType": "Button" },
+                { "name": "Cancel", "type": "Button", "id": "5", "expectedControlType": "Button" },
+                { "name": "OpenJournal", "type": "Button", "id": "6", "expectedControlType": "Button" },
+                { "name": "Pause", "type": "Button", "id": "7", "expectedControlType": "Button" }
+            ],
+            "bindings": [
+                { "name": "WASD", "id": "11", "path": "2DVector", "action": "Move", "isComposite": true },
+                { "name": "up", "id": "12", "path": "<Keyboard>/w", "action": "Move", "isPartOfComposite": true },
+                { "name": "down", "id": "13", "path": "<Keyboard>/s", "action": "Move", "isPartOfComposite": true },
+                { "name": "left", "id": "14", "path": "<Keyboard>/a", "action": "Move", "isPartOfComposite": true },
+                { "name": "right", "id": "15", "path": "<Keyboard>/d", "action": "Move", "isPartOfComposite": true },
+                { "id": "16", "path": "<Gamepad>/leftStick", "action": "Move" },
+                { "id": "17", "path": "<Mouse>/delta", "action": "Look" },
+                { "id": "18", "path": "<Gamepad>/rightStick", "action": "Look" },
+                { "id": "19", "path": "<Keyboard>/leftShift", "action": "Sprint" },
+                { "id": "20", "path": "<Keyboard>/e", "action": "Interact" },
+                { "id": "21", "path": "<Gamepad>/buttonSouth", "action": "Interact" },
+                { "id": "22", "path": "<Keyboard>/escape", "action": "Cancel" },
+                { "id": "23", "path": "<Gamepad>/buttonEast", "action": "Cancel" },
+                { "id": "24", "path": "<Keyboard>/j", "action": "OpenJournal" },
+                { "id": "25", "path": "<Gamepad>/start", "action": "OpenJournal" },
+                { "id": "26", "path": "<Keyboard>/escape", "action": "Pause" }
+            ]
         },
         {
-          "name": "Look",
-          "type": "Value",
-          "id": "cbd7c18a-7f83-5dd2-8789-ba0d689a4df4",
-          "expectedControlType": "Vector2"
-        },
-        {
-          "name": "Sprint",
-          "type": "Button",
-          "id": "ef668a63-d568-5497-b881-94b788e5fecb",
-          "expectedControlType": "Button"
-        },
-        {
-          "name": "Interact",
-          "type": "Button",
-          "id": "52424f04-d057-5c04-b493-7d44be63f021",
-          "expectedControlType": "Button"
-        },
-        {
-          "name": "Cancel",
-          "type": "Button",
-          "id": "a2834a10-615e-5ebf-8d69-17173155bf02",
-          "expectedControlType": "Button"
-        },
-        {
-          "name": "OpenJournal",
-          "type": "Button",
-          "id": "bfee3dcc-b333-5443-afc9-1250aab5a9d8",
-          "expectedControlType": "Button"
-        },
-        {
-          "name": "Pause",
-          "type": "Button",
-          "id": "de3a4ee9-1681-591e-9dd3-6abbcce65bff",
-          "expectedControlType": "Button"
+            "name": "Repair",
+            "id": "f5f6c111-8c5b-44c2-a6bf-3405604060b2",
+            "actions": [
+                { "name": "Pan", "type": "Value", "id": "31", "expectedControlType": "Vector2" },
+                { "name": "Zoom", "type": "Value", "id": "32", "expectedControlType": "Axis" },
+                { "name": "PointerPosition", "type": "Value", "id": "33", "expectedControlType": "Vector2" },
+                { "name": "PointerClick", "type": "Button", "id": "34", "expectedControlType": "Button" },
+                { "name": "PointerAltClick", "type": "Button", "id": "35", "expectedControlType": "Button" },
+                { "name": "RotatePart", "type": "Button", "id": "36", "expectedControlType": "Button" },
+                { "name": "Delete", "type": "Button", "id": "37", "expectedControlType": "Button" },
+                { "name": "Confirm", "type": "Button", "id": "38", "expectedControlType": "Button" },
+                { "name": "Cancel", "type": "Button", "id": "39", "expectedControlType": "Button" },
+                { "name": "ToggleWireTool", "type": "Button", "id": "40", "expectedControlType": "Button" },
+                { "name": "TogglePipeTool", "type": "Button", "id": "41", "expectedControlType": "Button" },
+                { "name": "RunDiagnostics", "type": "Button", "id": "42", "expectedControlType": "Button" },
+                { "name": "TestCalibrate", "type": "Button", "id": "43", "expectedControlType": "Button" }
+            ],
+            "bindings": [
+                { "name": "WASD", "id": "51", "path": "2DVector", "action": "Pan", "isComposite": true },
+                { "name": "up", "id": "52", "path": "<Keyboard>/w", "action": "Pan", "isPartOfComposite": true },
+                { "name": "down", "id": "53", "path": "<Keyboard>/s", "action": "Pan", "isPartOfComposite": true },
+                { "name": "left", "id": "54", "path": "<Keyboard>/a", "action": "Pan", "isPartOfComposite": true },
+                { "name": "right", "id": "55", "path": "<Keyboard>/d", "action": "Pan", "isPartOfComposite": true },
+                { "id": "56", "path": "<Gamepad>/rightStick", "action": "Pan" },
+                { "id": "57", "path": "<Mouse>/scroll/y", "action": "Zoom" },
+                { "id": "58", "path": "<Gamepad>/leftTrigger", "action": "Zoom" },
+                { "id": "59", "path": "<Mouse>/position", "action": "PointerPosition" },
+                { "id": "60", "path": "<Mouse>/leftButton", "action": "PointerClick" },
+                { "id": "61", "path": "<Mouse>/rightButton", "action": "PointerAltClick" },
+                { "id": "62", "path": "<Keyboard>/r", "action": "RotatePart" },
+                { "id": "63", "path": "<Gamepad>/rightShoulder", "action": "RotatePart" },
+                { "id": "64", "path": "<Keyboard>/delete", "action": "Delete" },
+                { "id": "65", "path": "<Gamepad>/buttonWest", "action": "Delete" },
+                { "id": "66", "path": "<Keyboard>/enter", "action": "Confirm" },
+                { "id": "67", "path": "<Gamepad>/buttonSouth", "action": "Confirm" },
+                { "id": "68", "path": "<Keyboard>/escape", "action": "Cancel" },
+                { "id": "69", "path": "<Gamepad>/buttonEast", "action": "Cancel" },
+                { "id": "70", "path": "<Keyboard>/1", "action": "ToggleWireTool" },
+                { "id": "71", "path": "<Keyboard>/2", "action": "TogglePipeTool" },
+                { "id": "72", "path": "<Keyboard>/f5", "action": "RunDiagnostics" },
+                { "id": "73", "path": "<Keyboard>/d", "action": "RunDiagnostics" },
+                { "id": "74", "path": "<Keyboard>/t", "action": "TestCalibrate" }
+            ]
         }
-      ],
-      "bindings": [
-        {
-          "name": "WASD",
-          "id": "7acf9192-a1cd-510c-b5d2-127a52a1ed51",
-          "path": "2DVector",
-          "action": "Move",
-          "isComposite": true
-        },
-        {
-          "name": "up",
-          "id": "427ea17c-7eb3-5073-a892-ac912c29ec3a",
-          "path": "<Keyboard>/w",
-          "action": "Move",
-          "isPartOfComposite": true
-        },
-        {
-          "name": "down",
-          "id": "a9c1c68c-c9ff-58f3-a0e6-e88aa7d3de9f",
-          "path": "<Keyboard>/s",
-          "action": "Move",
-          "isPartOfComposite": true
-        },
-        {
-          "name": "left",
-          "id": "3af6bb72-60bd-5910-99a6-32d8cebe2f17",
-          "path": "<Keyboard>/a",
-          "action": "Move",
-          "isPartOfComposite": true
-        },
-        {
-          "name": "right",
-          "id": "fdc9b4db-cb60-5fe2-be52-b5eef5bbcaf0",
-          "path": "<Keyboard>/d",
-          "action": "Move",
-          "isPartOfComposite": true
-        },
-        {
-          "id": "27e9fdc2-45f7-52b8-a7ec-34f4ec8f231c",
-          "path": "<Gamepad>/leftStick",
-          "action": "Move"
-        },
-        {
-          "id": "6935f1fb-12eb-523d-9869-5b8524dd8081",
-          "path": "<Mouse>/delta",
-          "action": "Look"
-        },
-        {
-          "id": "9638bfc4-9554-5e11-99d6-d7fed3aadcd2",
-          "path": "<Gamepad>/rightStick",
-          "action": "Look"
-        },
-        {
-          "id": "a3e2cb1b-175c-595f-9e7a-7336a7405a81",
-          "path": "<Keyboard>/leftShift",
-          "action": "Sprint"
-        },
-        {
-          "id": "623c193f-53f9-593e-b60d-fdcb629e1b47",
-          "path": "<Keyboard>/e",
-          "action": "Interact"
-        },
-        {
-          "id": "ef540f1e-f146-520e-a759-08e8a5e94e4b",
-          "path": "<Gamepad>/buttonSouth",
-          "action": "Interact"
-        },
-        {
-          "id": "6da18dc6-e985-53e5-b18e-c97549d29c58",
-          "path": "<Keyboard>/escape",
-          "action": "Cancel"
-        },
-        {
-          "id": "07ab15c5-da37-59aa-9531-2502961f7ae3",
-          "path": "<Gamepad>/buttonEast",
-          "action": "Cancel"
-        },
-        {
-          "id": "7e74d5ff-f984-56dc-a6b9-8facc678b5af",
-          "path": "<Keyboard>/j",
-          "action": "OpenJournal"
-        },
-        {
-          "id": "6d2de0fc-7389-574d-ad84-b45d915cf688",
-          "path": "<Gamepad>/start",
-          "action": "OpenJournal"
-        },
-        {
-          "id": "8c9b9e8a-a4c6-59fb-b90c-6e73e90d3f13",
-          "path": "<Keyboard>/escape",
-          "action": "Pause"
-        }
-      ]
-    },
-    {
-      "name": "Repair",
-      "id": "82252ae9-b40c-5647-b377-3ed4c63b00d8",
-      "actions": [
-        {
-          "name": "Pan",
-          "type": "Value",
-          "id": "13d61fd2-6388-5edb-95be-1d87b3bf0e4f",
-          "expectedControlType": "Vector2"
-        },
-        {
-          "name": "Zoom",
-          "type": "Value",
-          "id": "a0915b51-3ed4-5b3e-b6c2-144d0253d11c",
-          "expectedControlType": "Axis"
-        },
-        {
-          "name": "PointerPosition",
-          "type": "Value",
-          "id": "efd7370f-8176-5bba-98d4-a8da14785233",
-          "expectedControlType": "Vector2"
-        },
-        {
-          "name": "PointerClick",
-          "type": "Button",
-          "id": "36c117fd-1335-5cd5-9cdd-b61db898c6fb",
-          "expectedControlType": "Button"
-        },
-        {
-          "name": "PointerAltClick",
-          "type": "Button",
-          "id": "c6ae7e93-5e16-5823-8ffd-8a0f713f8a6b",
-          "expectedControlType": "Button"
-        },
-        {
-          "name": "RotatePart",
-          "type": "Button",
-          "id": "75debaaa-8f81-584b-8dea-0b129bf9c764",
-          "expectedControlType": "Button"
-        },
-        {
-          "name": "Delete",
-          "type": "Button",
-          "id": "66ad1d8e-04fb-546c-8f4d-8aed23b15f0b",
-          "expectedControlType": "Button"
-        },
-        {
-          "name": "Confirm",
-          "type": "Button",
-          "id": "f8836e80-7760-57ad-9b8e-1266f985b2cd",
-          "expectedControlType": "Button"
-        },
-        {
-          "name": "Cancel",
-          "type": "Button",
-          "id": "0d2b8c1f-ad57-5ff3-8e74-7842087a6006",
-          "expectedControlType": "Button"
-        },
-        {
-          "name": "ToggleWireTool",
-          "type": "Button",
-          "id": "baf4c5d4-43a5-5aa7-a5e9-adb44441503b",
-          "expectedControlType": "Button"
-        },
-        {
-          "name": "TogglePipeTool",
-          "type": "Button",
-          "id": "a050267f-d3ef-509a-aeb2-1fd83e9e2362",
-          "expectedControlType": "Button"
-        },
-        {
-          "name": "RunDiagnostics",
-          "type": "Button",
-          "id": "6ba78c73-2631-5a46-b49f-514dc19fe209",
-          "expectedControlType": "Button"
-        },
-        {
-          "name": "TestCalibrate",
-          "type": "Button",
-          "id": "b02e4d90-2e76-5483-af2e-6509b0043e33",
-          "expectedControlType": "Button"
-        }
-      ],
-      "bindings": [
-        {
-          "name": "WASD",
-          "id": "5c9705ef-eec3-5bac-abca-10e5b66ccdb8",
-          "path": "2DVector",
-          "action": "Pan",
-          "isComposite": true
-        },
-        {
-          "name": "up",
-          "id": "174c5f95-d29b-58ed-bedb-b1edc0e87bc4",
-          "path": "<Keyboard>/w",
-          "action": "Pan",
-          "isPartOfComposite": true
-        },
-        {
-          "name": "down",
-          "id": "cae8f213-ef69-5a53-a34d-2afa51c6a7c8",
-          "path": "<Keyboard>/s",
-          "action": "Pan",
-          "isPartOfComposite": true
-        },
-        {
-          "name": "left",
-          "id": "b4a35bd3-a2b1-545d-99e0-2fba24d26cb0",
-          "path": "<Keyboard>/a",
-          "action": "Pan",
-          "isPartOfComposite": true
-        },
-        {
-          "name": "right",
-          "id": "17ae9bc8-0cfb-56e7-bb43-737645aabad4",
-          "path": "<Keyboard>/d",
-          "action": "Pan",
-          "isPartOfComposite": true
-        },
-        {
-          "id": "07a22979-b1bb-5b6c-9fb5-60f760254d1b",
-          "path": "<Gamepad>/rightStick",
-          "action": "Pan"
-        },
-        {
-          "id": "c6952805-37c6-5e99-8c59-609b5296f782",
-          "path": "<Mouse>/scroll/y",
-          "action": "Zoom"
-        },
-        {
-          "id": "4bf5e57d-bdfb-5614-b756-8b70539bb3e6",
-          "path": "<Gamepad>/leftTrigger",
-          "action": "Zoom"
-        },
-        {
-          "id": "53c1fcbd-4a23-5782-a41b-34d02ada39d6",
-          "path": "<Mouse>/position",
-          "action": "PointerPosition"
-        },
-        {
-          "id": "91fe23f5-9b78-520f-ac9b-b82f9ee6a1a6",
-          "path": "<Mouse>/leftButton",
-          "action": "PointerClick"
-        },
-        {
-          "id": "8424ebac-10bd-55c6-99d9-3d7267a3690d",
-          "path": "<Mouse>/rightButton",
-          "action": "PointerAltClick"
-        },
-        {
-          "id": "58cd0a5c-92a3-5cb9-8193-8576f7fd46e8",
-          "path": "<Keyboard>/r",
-          "action": "RotatePart"
-        },
-        {
-          "id": "998c0240-5370-5cb8-a1fe-51aee3a17cc8",
-          "path": "<Gamepad>/rightShoulder",
-          "action": "RotatePart"
-        },
-        {
-          "id": "226d7bae-8a04-5ef2-80f5-8387c1f4708d",
-          "path": "<Keyboard>/delete",
-          "action": "Delete"
-        },
-        {
-          "id": "211dd01b-5998-58f3-8d41-a610a2a24871",
-          "path": "<Gamepad>/buttonWest",
-          "action": "Delete"
-        },
-        {
-          "id": "ed66568d-6bcc-5597-9f86-f57bd5b3b99d",
-          "path": "<Keyboard>/enter",
-          "action": "Confirm"
-        },
-        {
-          "id": "2019402a-45c6-550a-8467-77b1c9d90df5",
-          "path": "<Gamepad>/buttonSouth",
-          "action": "Confirm"
-        },
-        {
-          "id": "d5f04aee-3f4a-5597-8fdb-c5dbf88b3a0d",
-          "path": "<Keyboard>/escape",
-          "action": "Cancel"
-        },
-        {
-          "id": "bf9209af-6a28-5104-8712-26f0ce7c2a41",
-          "path": "<Gamepad>/buttonEast",
-          "action": "Cancel"
-        },
-        {
-          "id": "56d9f8e7-731b-5c02-87d4-abafb205da46",
-          "path": "<Keyboard>/1",
-          "action": "ToggleWireTool"
-        },
-        {
-          "id": "d444b493-7532-554a-b136-2985bd094825",
-          "path": "<Keyboard>/2",
-          "action": "TogglePipeTool"
-        },
-        {
-          "id": "471751d5-57d5-52ce-afe0-d48fe5346444",
-          "path": "<Keyboard>/f5",
-          "action": "RunDiagnostics"
-        },
-        {
-          "id": "ec09daf4-948c-5e4d-a19d-28bbb9501f54",
-          "path": "<Keyboard>/d",
-          "action": "RunDiagnostics"
-        },
-        {
-          "id": "6237a3a5-ef07-590a-9d48-dc5529eb0e6e",
-          "path": "<Keyboard>/t",
-          "action": "TestCalibrate"
-        }
-      ]
-    }
-  ],
-  "controlSchemes": [],
-  "id": "2c97dca4-5399-502f-a300-a09e6cd05107"
+    ],
+    "controlSchemes": []
 }
